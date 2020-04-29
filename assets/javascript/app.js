@@ -24,6 +24,17 @@ var trivia = [
       "Lil Wayne was apart of this music group when starting his rap career",
     choiceAnswer: ["Young Money", "Wu-Tang Clan", "Hot Boyz", "Coldplay"],
     rightAnswer: 2
+  },
+  {
+    question:
+      "This album won Kendrick Lamar his first Grammy for Rap Album of The Year",
+    choiceAnswer: [
+      "Good Kid, m.A.A.d City",
+      "DAMN",
+      "Black Hippy",
+      "To Pimp a Butterfly"
+    ],
+    rightAnswer: 3
   }
 ];
 
@@ -81,12 +92,13 @@ $(document).ready(function() {
         );
         // clearInterval(playTime);
         questionBank++;
+        gameResponse.hide();
         setTimeout(gamePlay, 3000);
-        // gameResponse.hide();
       }
       if (counter > 0 || counter === 10) {
         counter--;
         $("#timer").html(`Time Remaining: ${counter}`);
+        $("game-response").hide();
       }
     }
   }
@@ -124,10 +136,10 @@ $(document).ready(function() {
 
     questionBank++;
 
+    counter = 10;
     setTimeout(gamePlay, 3000);
 
     console.log(setTimeout(gamePlay, 3000));
-    counter = 10;
     clearInterval(playTime);
     timePlay();
   }
