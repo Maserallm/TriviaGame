@@ -1,12 +1,13 @@
 body {
-    background-color: black;
-    /* background-image: url(../images/background-clouds-color-1040474.jpg); */
-    color: whitesmoke;
+  background-color: black;
+  /* background-image: url(../images/background-clouds-color-1040474.jpg); */
+  color: whitesmoke;
 }
 
 #trivQuestions {
-    background-image: url(../images/graduation-bg.jpg);
-    width: 100%;
-    height: auto;
-    
+  background-image: url(../images/graduation-bg.jpg);
+  /* background-size: 100%; */
+  background-repeat: no-repeat;
+  width: 100%;
+  height: auto;
 }
