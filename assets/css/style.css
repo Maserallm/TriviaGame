@@ -9,5 +9,12 @@ body {
   /* background-size: 100%; */
   background-repeat: no-repeat;
   width: 100%;
-  height: auto;
+  height: 100vh;
+}
+
+#start-button {
+  border-radius: 10px;
+  background: none;
+  border: whitesmoke 5px solid;
+  color: white;
 }
